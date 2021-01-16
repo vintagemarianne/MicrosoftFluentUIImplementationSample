@@ -1,0 +1,9 @@
+﻿@page "/"
+
+<section class="page">
+    <div class="btn unselectable" @onclick="ToggleComponentDisability">
+        <span class="btn-icon"></span>Click to @(IsComponentDisabled ? "enable" : "disable") the component
+    </div>
+
+    <FluentComponent IsDisabled="IsComponentDisabled"></FluentComponent>
+</section>
